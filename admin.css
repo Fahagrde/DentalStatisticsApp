@@ -1,0 +1,98 @@
+/* تنسيق الصفحة المركزية */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe3e3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* حاوية مركزية للأقسام */
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* تصميم الأقسام */
+.content-section {
+  background: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-section h2 {
+  color: #6a0572;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* تنسيق الأزرار */
+button {
+  padding: 10px 20px;
+  background: #ff6a88;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #f94892;
+}
+
+/* تنسيق حقول الإدخال */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dab6fc;
+  border-radius: 5px;
+  background-color: #f7e7ff;
+  font-size: 1rem;
+  text-align: center; /* توسيط النص داخل الحقل */
+}
+
+/* ضبط محاذاة النموذج وحقول الإدخال */
+.content-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* توسيط العناصر أفقيًا */
+}
+
+.content-section form label {
+  width: 100%; /* لضمان عرض الملصق بشكل كامل */
+  text-align: left; /* محاذاة النص لليسار */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* ضبط عرض حقول الإدخال وجعلها متمركزة */
+.content-section form input[type="text"],
+.content-section form input[type="password"] {
+  width: 100%;
+  max-width: 300px; /* ضبط عرض مناسب للحقل */
+  padding: 10px;
+  margin-bottom: 15px; /* مسافة بين كل حقل إدخال */
+  border: 1px solid #dab6fc;
+  border-radius: 5px;
+  background-color: #f7e7ff;
+  font-size: 1rem;
+  text-align: center; /* لتوسيط النص داخل الحقل */
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إحصائيات طب الأسنان</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- إضافة الشعار في أعلى الصفحة -->
+    <img src="img/الشعار.png" alt="Logo" id="logo">
+
+    <!-- إضافة اسم الإدارة -->
+    <h1>وحـــدة طـــوارئ طب أسنان أطفال</h1>
+    <h2>Paediatric Dental Emergency Unit</h2>
+
+    <label for="center">اختر المركز:</label>
+    <select id="center" name="center" required>
+        <option value="Center 1">العدان التخصصي</option>
+        <option value="Center 2">الفروانية التخصصي</option>
+        <option value="Center 3">الجهراء التخصصي</option>
+        <option value="Center 3">مستشفى جابر التخصصي</option>
+        <!-- يمكنك إضافة المزيد من المراكز هنا -->
+    </select>
+
+    <!-- قسم النموذج لإدخال إحصائيات العلاجات اليومية -->
+    <div id="app">
+        <h2>إحصائية العلاجات اليومية</h2>
+
+        <!-- نموذج إدخال إحصائيات العلاجات اليومية -->
+        <form>
+            <label for="pulpotomyPermanent">Pulpotomy Permanent:</label>
+            <input type="number" id="pulpotomyPermanent" name="pulpotomyPermanent" min="0" value="0" required>
+
+            <label for="pulpectomyPermanent">Pulpectomy Permanent:</label>
+            <input type="number" id="pulpectomyPermanent" name="pulpectomyPermanent" min="0" value="0" required>
+
+            <label for="pulpotomyPrimary">Pulpotomy Primary:</label>
+            <input type="number" id="pulpotomyPrimary" name="pulpotomyPrimary" min="0" value="0" required>
+
+            <label for="temporaryFilling">Temporary Filling:</label>
+            <input type="number" id="temporaryFilling" name="temporaryFilling" min="0" value="0" required>
+
+            <label for="extractionPermanent">Extraction Permanent:</label>
+            <input type="number" id="extractionPermanent" name="extractionPermanent" min="0" value="0" required>
+
+            <label for="extractionPrimary">Extraction Primary:</label>
+            <input type="number" id="extractionPrimary" name="extractionPrimary" min="0" value="0" required>
+
+            <label for="traumaManagement">Trauma Management:</label>
+            <input type="number" id="traumaManagement" name="traumaManagement" min="0" value="0" required>
+
+            <label for="medication">Medication:</label>
+            <input type="number" id="medication" name="medication" min="0" value="0" required>
+
+            <label for="suturing">Suturing:</label>
+            <input type="number" id="suturing" name="suturing" min="0" value="0" required>
+
+            <label for="sutureRemoval">Suture Removal:</label>
+            <input type="number" id="sutureRemoval" name="sutureRemoval" min="0" value="0" required>
+
+            <label for="refuseTreatment">Refuse Treatment:</label>
+            <input type="number" id="refuseTreatment" name="refuseTreatment" min="0" value="0" required>
+
+            <label for="nonEmergency">Non Emergency:</label>
+            <input type="number" id="nonEmergency" name="nonEmergency" min="0" value="0" required>
+
+            <label for="xRay">X-Ray:</label>
+            <input type="number" id="xRay" name="xRay" min="0" value="0" required>
+
+            <label for="otherProcedure">Other Procedure:</label>
+            <input type="number" id="otherProcedure" name="otherProcedure" min="0" value="0" required>
+
+            <label for="referral">Referral:</label>
+            <input type="number" id="referral" name="referral" min="0" value="0" required>
+
+            <label for="ptKW">Pt (KW):</label>
+            <input type="number" id="ptKW" name="ptKW" min="0" value="0" required>
+
+            <label for="ptNK">Pt (NK):</label>
+            <input type="number" id="ptNK" name="ptNK" min="0" value="0" required>
+
+            <label for="ptTotal">Pt (Total):</label>
+            <input type="number" id="ptTotal" name="ptTotal" min="0" value="0" required>
+
+            <button type="submit">حفظ الإحصائية</button>
+        </form>
+    </div>
+    <a href="admin.html">الذهاب إلى صفحة الإدارة</a>
+    <a href="index.html">الذهاب إلى صفحة تسجيل الحالات</a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
